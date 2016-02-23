@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PfK-8X-aWh">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="g7g-Hx-6Fe">
+            <objects>
+                <navigationController id="PfK-8X-aWh" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PlA-dY-w7r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Bad-qo-zJU" kind="relationship" relationship="rootViewController" id="7HI-wh-QdR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROg-6l-MyW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-445" y="298"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="NNl-T9-UvP">
+            <objects>
+                <viewController id="Bad-qo-zJU" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KKS-zQ-bqL"/>
+                        <viewControllerLayoutGuide type="bottom" id="YvC-eQ-PjB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hOq-D4-9DP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlh-tR-93e">
+                                <rect key="frame" x="125" y="269" width="70" height="30"/>
+                                <state key="normal" title="进入"/>
+                                <connections>
+                                    <action selector="goin:" destination="Bad-qo-zJU" eventType="touchUpInside" id="Rge-W9-hZR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q9N-rx-mcH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFh-DF-GXq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="298"/>
+        </scene>
+    </scenes>
+</document>
